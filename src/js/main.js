@@ -1,7 +1,24 @@
-require(["header", "body", "footer"], function(Header, Body, Footer) {
-    new Header();
-    new Body();
-    new Footer();
+require(["spa", "header", "body", "footer", "utils"], function(SPA, Header, Body, Footer, utils) {
+    var header = new Header();
+    var body = new Body();
+    var footer = new Footer();
+
+    /*
+    utils.insertCss("css/plugins/spa.css");
+    SPA.addPages([
+        {
+            path : "/",
+            layout : document.body,
+            context : body.getElement(),
+            content : function(callback, data) {
+                var f = document.createElement("div");
+                f.innerHTML = "content2";
+                callback(f);
+            }
+        }
+    ]);
+    SPA.start({});
+    */
 });
 
 /*

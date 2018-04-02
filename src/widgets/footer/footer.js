@@ -6,5 +6,9 @@ define(["utils"], function(utils) {
         var div = document.createElement("div");
         div.classList.add("rd_footer");
         document.body.appendChild(div);
+
+        this.getElement = function() {
+            return div;
+        };
     };
 });

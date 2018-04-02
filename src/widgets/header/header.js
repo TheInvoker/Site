@@ -9,5 +9,9 @@ define(["headroom", "utils"], function(Headroom, utils) {
         
         var headroom  = new Headroom(div);
         headroom.init(); 
+
+        this.getElement = function() {
+            return div;
+        };
     };
 });
