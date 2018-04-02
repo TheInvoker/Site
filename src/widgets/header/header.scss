@@ -1,0 +1,28 @@
+@import 'lib';
+
+/* headroom */
+.headroom {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    transition: transform .25s ease-in-out;
+}
+.headroom--unpinned {
+    transition: .25s;
+    transform: translateY(-100%);
+}
+.headroom--pinned {
+    transition: .5s;
+}
+
+/* header */
+$header_height : 100px;
+body {
+    margin-top:$header_height;
+}
+.rd_header {
+    height:$header_height;
+    width:100%;
+    background-color: $color_1;
+}
