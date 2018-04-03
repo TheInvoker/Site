@@ -1,6 +1,6 @@
 define(["headroom", "utils"], function(Headroom, utils) {
 
-    utils.insertCss("widgets/header/header.css");
+    utils.insertCSS("widgets/header/header.css");
 
     return function(data) {
         var div = document.createElement("div");

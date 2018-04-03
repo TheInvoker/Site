@@ -2,7 +2,7 @@ define([], function() {
     
     return new function() {
 
-        this.insertCss = function( href ) {
+        this.insertCSS = function( href ) {
             var head  = document.getElementsByTagName('head')[0];
             var link  = document.createElement('link');
             link.rel  = 'stylesheet';
