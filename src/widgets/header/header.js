@@ -11,8 +11,7 @@ define(["headroom", "utils"], function(Headroom, utils) {
         var headroom  = new Headroom(div);
         headroom.init(); 
 
-        updateHeaderPadding();
-        window.addEventListener("resize", updateHeaderPadding, false);
+        setInterval(updateHeaderPadding, 200);
 
         function updateHeaderPadding() {
             document.body.style.paddingTop = div.clientHeight + "px";
@@ -21,7 +20,5 @@ define(["headroom", "utils"], function(Headroom, utils) {
         this.getElement = function() {
             return div;
         };
-
-        this.updateHeaderPadding = updateHeaderPadding;
     };
 });
