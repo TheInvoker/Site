@@ -1,0 +1,19 @@
+{
+    "header" : [
+        {
+            "name" : "About"
+        },
+        {
+            "name" : "Projects"
+        },
+        {
+            "name" : "Work"
+        },
+        {
+            "name" : "Education"
+        },
+        {
+            "name" : "Contact"
+        }
+    ]
+}

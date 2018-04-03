@@ -1,8 +1,17 @@
-require(["spa", "header", "body", "footer", "utils"], function(SPA, Header, Body, Footer, utils) {
-    var header = new Header();
-    var body = new Body();
-    var footer = new Footer();
+require(["jquery", "spa", "header", "body", "footer", "utils"], function($, SPA, Header, Body, Footer, utils) {
+    
+    $.ajax({
+        url : "/json/site.json",
+        success : function(data) {
+            var header = new Header(data.header);
+            var body = new Body();
+            var footer = new Footer();
+        }, 
+        error : function() {
 
+        }
+    });
+    
     /*
     utils.insertCss("css/plugins/spa.css");
     SPA.addPages([

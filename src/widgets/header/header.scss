@@ -17,11 +17,19 @@
 }
 
 /* header */
-body {
-    box-sizing: border-box;
-}
 .rd_header {
     width:100%;
     background-color: black;
     color:white;
+    text-align: right;
+    .rd_header_cell {
+        display:inline-block;
+        padding:10px;
+        transition: all 0.5s;
+        cursor:pointer;
+        &:hover {
+            background-color:rgb(189, 189, 189);
+            color:black;
+        }
+    }
 }
