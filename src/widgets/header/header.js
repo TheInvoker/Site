@@ -12,6 +12,7 @@ define(["headroom", "utils"], function(Headroom, utils) {
         headroom.init(); 
 
         updateHeaderPadding();
+        window.addEventListener("resize", updateHeaderPadding, false);
 
         function updateHeaderPadding() {
             document.body.style.paddingTop = div.clientHeight + "px";
