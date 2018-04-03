@@ -15,5 +15,22 @@
         {
             "name" : "Contact"
         }
+    ],
+    "social" : [
+        {
+            "name" : "Email",
+            "url" : "mailto:ryan.dsouza@hotmail.ca",
+            "target" : "_self"
+        },
+        {
+            "name" : "LinkedIn",
+            "url" : "https://ca.linkedin.com/in/ryanstevedsouza647",
+            "target" : "_blank"
+        },
+        {
+            "name" : "Github",
+            "url" : "https://github.com/TheInvoker",
+            "target" : "_blank"
+        }
     ]
 }

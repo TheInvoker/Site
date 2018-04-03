@@ -5,7 +5,7 @@ require(["jquery", "spa", "header", "body", "footer", "utils"], function($, SPA,
         success : function(data) {
             var header = new Header(data.header);
             var body = new Body();
-            var footer = new Footer();
+            var footer = new Footer(data.social);
         }, 
         error : function() {
 
