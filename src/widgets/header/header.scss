@@ -31,5 +31,11 @@
             background-color:rgb(189, 189, 189);
             color:black;
         }
+        @media (max-width:$responsive_1) {
+            display:block;
+        }
+    }
+    @media (max-width:$responsive_1) {
+        text-align: center;
     }
 }

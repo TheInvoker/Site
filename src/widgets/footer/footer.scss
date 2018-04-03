@@ -8,5 +8,8 @@
         padding:10px;
         color:white;
         text-decoration: none;
+        @media (max-width:$responsive_1) {
+            display:block;
+        }
     }
 }
