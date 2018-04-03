@@ -2,7 +2,7 @@
 
 body {
     display: flex;
-    min-height: calc(100vh - #{$header_height});
+    min-height: 100vh;
     flex-direction: column;
 }
 .rd_body {

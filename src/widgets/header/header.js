@@ -4,14 +4,23 @@ define(["headroom", "utils"], function(Headroom, utils) {
 
     return function() {
         var div = document.createElement("div");
+        div.innerHTML = "HELLO";
         div.classList.add("rd_header");
         document.body.appendChild(div);
         
         var headroom  = new Headroom(div);
         headroom.init(); 
 
+        updateHeaderPadding();
+
+        function updateHeaderPadding() {
+            document.body.style.paddingTop = div.clientHeight + "px";
+        }
+
         this.getElement = function() {
             return div;
         };
+
+        this.updateHeaderPadding = updateHeaderPadding;
     };
 });

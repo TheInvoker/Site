@@ -18,10 +18,9 @@
 
 /* header */
 body {
-    margin-top:$header_height;
+    box-sizing: border-box;
 }
 .rd_header {
-    height:$header_height;
     width:100%;
-    background-color: $color_1;
+    background-color: rgba(0,0,0,0.5);
 }
