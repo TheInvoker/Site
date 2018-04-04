@@ -6,14 +6,14 @@ define(["utils"], function(utils) {
         var div = document.createElement("div");
         div.classList.add("rd_footer");
 
-        for(var i=0; i<data.length; i++) {
+        data.map(function(item) {
             var t = document.createElement("a");
-            t.setAttribute("href", data[i].url);
-            t.setAttribute("target", data[i].target);
+            t.setAttribute("href", item.url);
+            t.setAttribute("target", item.target);
             t.classList.add("rd_footer_cell");
-            t.innerHTML = data[i].name;
+            t.innerHTML = item.name;
             div.appendChild(t);
-        }
+        });
 
         this.getElement = function() {
             return div;

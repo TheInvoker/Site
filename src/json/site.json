@@ -1,19 +1,24 @@
 {
     "header" : [
         {
-            "name" : "About"
+            "name" : "About",
+            "url" : "/"
         },
         {
-            "name" : "Projects"
+            "name" : "Projects",
+            "url" : "/"
         },
         {
-            "name" : "Work"
+            "name" : "Work",
+            "url" : "/"
         },
         {
-            "name" : "Education"
+            "name" : "Education",
+            "url" : "/"
         },
         {
-            "name" : "Contact"
+            "name" : "Contact",
+            "url" : "/"
         }
     ],
     "social" : [

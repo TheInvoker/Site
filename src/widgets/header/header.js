@@ -1,4 +1,4 @@
-define(["headroom", "utils"], function(Headroom, utils) {
+define(["spa", "headroom", "utils"], function(SPA, Headroom, utils) {
 
     utils.insertCSS("widgets/header/header.css");
 
@@ -6,12 +6,15 @@ define(["headroom", "utils"], function(Headroom, utils) {
         var div = document.createElement("div");
         div.classList.add("rd_header");
 
-        for(var i=0; i<data.length; i++) {
+        data.map(function(item) {
             var t = document.createElement("div");
             t.classList.add("rd_header_cell");
-            t.innerHTML = data[i].name;
+            t.addEventListener("click", function(e) {
+                SPA.openPage(item.url, {}, true);
+            });
+            t.innerHTML = item.name;
             div.appendChild(t);
-        }
+        });
 
         var headroom  = new Headroom(div);
         headroom.init(); 
