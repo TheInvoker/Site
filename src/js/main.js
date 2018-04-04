@@ -29,6 +29,7 @@ require(["jquery", "spa", "header", "body", "footer", "utils"], function($, SPA,
 
     function handleBody(SPA, layout, context, utils) {
         utils.insertCSS("css/plugins/spa.css");
+
         SPA.addPages([
             {
                 path : "/",
@@ -36,7 +37,47 @@ require(["jquery", "spa", "header", "body", "footer", "utils"], function($, SPA,
                 context : context,
                 content : function(callback, data) {
                     var f = document.createElement("div");
-                    f.innerHTML = "content2";
+                    f.innerHTML = "About";
+                    callback(f);
+                }
+            },
+            {
+                path : "/projects",
+                layout : layout,
+                context : context,
+                content : function(callback, data) {
+                    var f = document.createElement("div");
+                    f.innerHTML = "Projects";
+                    callback(f);
+                }
+            },
+            {
+                path : "/work",
+                layout : layout,
+                context : context,
+                content : function(callback, data) {
+                    var f = document.createElement("div");
+                    f.innerHTML = "Work";
+                    callback(f);
+                }
+            },
+            {
+                path : "/education",
+                layout : layout,
+                context : context,
+                content : function(callback, data) {
+                    var f = document.createElement("div");
+                    f.innerHTML = "Education";
+                    callback(f);
+                }
+            },
+            {
+                path : "/contact",
+                layout : layout,
+                context : context,
+                content : function(callback, data) {
+                    var f = document.createElement("div");
+                    f.innerHTML = "Contact";
                     callback(f);
                 }
             }

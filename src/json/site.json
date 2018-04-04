@@ -6,19 +6,19 @@
         },
         {
             "name" : "Projects",
-            "url" : "/"
+            "url" : "/projects"
         },
         {
             "name" : "Work",
-            "url" : "/"
+            "url" : "/work"
         },
         {
             "name" : "Education",
-            "url" : "/"
+            "url" : "/education"
         },
         {
             "name" : "Contact",
-            "url" : "/"
+            "url" : "/contact"
         }
     ],
     "social" : [
