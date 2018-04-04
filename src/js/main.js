@@ -6,28 +6,30 @@ require(["jquery", "spa", "header", "body", "footer", "utils"], function($, SPA,
             var header = new Header(data.header);
             var body = new Body();
             var footer = new Footer(data.social);
+
+            handleBody(SPA, body, utils);
         }, 
-        error : function() {
+        error : function(jqXHR, error, errorThrown) {
 
         }
     });
-    
-    /*
-    utils.insertCss("css/plugins/spa.css");
-    SPA.addPages([
-        {
-            path : "/",
-            layout : document.body,
-            context : body.getElement(),
-            content : function(callback, data) {
-                var f = document.createElement("div");
-                f.innerHTML = "content2";
-                callback(f);
+
+    function handleBody(SPA, body, utils) {
+        utils.insertCSS("css/plugins/spa.css");
+        SPA.addPages([
+            {
+                path : "/",
+                layout : document.body,
+                context : body.getElement(),
+                content : function(callback, data) {
+                    var f = document.createElement("div");
+                    f.innerHTML = "content2";
+                    callback(f);
+                }
             }
-        }
-    ]);
-    SPA.start({});
-    */
+        ]);
+        SPA.start({});
+    }
 });
 
 /*

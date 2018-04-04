@@ -4,7 +4,6 @@ define(["utils"], function(utils) {
 
     return function() {
         var div = document.createElement("div");
-        div.innerHTML = "WORLD";
         div.classList.add("rd_body");
         document.body.appendChild(div);
 
