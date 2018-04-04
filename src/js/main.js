@@ -7,20 +7,33 @@ require(["jquery", "spa", "header", "body", "footer", "utils"], function($, SPA,
             var body = new Body();
             var footer = new Footer(data.social);
 
-            handleBody(SPA, body, utils);
+            var headerElement = header.getElement();
+            var bodyElement = body.getElement();
+            var footerElement = footer.getElement();
+
+            var div = document.createElement("div");
+            div.appendChild(headerElement);
+            div.appendChild(bodyElement);
+            div.appendChild(footerElement);
+            document.body.appendChild(div);
+
+            div.classList.add("rd_full_body_container");
+            bodyElement.classList.add("rd_full_body");
+
+            handleBody(SPA, div, bodyElement, utils);
         }, 
         error : function(jqXHR, error, errorThrown) {
 
         }
     });
 
-    function handleBody(SPA, body, utils) {
+    function handleBody(SPA, layout, context, utils) {
         utils.insertCSS("css/plugins/spa.css");
         SPA.addPages([
             {
                 path : "/",
-                layout : document.body,
-                context : body.getElement(),
+                layout : layout,
+                context : context,
                 content : function(callback, data) {
                     var f = document.createElement("div");
                     f.innerHTML = "content2";

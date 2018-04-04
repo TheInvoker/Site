@@ -5,7 +5,6 @@ define(["utils"], function(utils) {
     return function(data) {
         var div = document.createElement("div");
         div.classList.add("rd_footer");
-        document.body.appendChild(div);
 
         for(var i=0; i<data.length; i++) {
             var t = document.createElement("a");

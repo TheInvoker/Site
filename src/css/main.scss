@@ -3,3 +3,12 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+.rd_full_body_container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    .rd_full_body {
+        flex: 1;
+    }
+}

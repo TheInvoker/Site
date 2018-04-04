@@ -19,17 +19,18 @@
 /* header */
 .rd_header {
     width:100%;
-    background-color: black;
-    color:white;
+    background-color: white;
+    color:black;
     text-align: right;
+    box-shadow:0 0 5px rgba(0,0,0,0.5);
     .rd_header_cell {
         display:inline-block;
         padding:10px;
         transition: all 0.5s;
         cursor:pointer;
         &:hover {
-            background-color:rgb(189, 189, 189);
-            color:black;
+            background-color:black;
+            color:white;
         }
         @media (max-width:$responsive_1) {
             display:block;
