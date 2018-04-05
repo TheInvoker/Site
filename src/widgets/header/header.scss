@@ -34,18 +34,28 @@
     .rd_header_hamburger_button {
         width:40px;
         height:40px;
-        background-color:red;
+        background-position: center;
+        background-repeat: no-repeat;
         display:none;
         cursor:pointer;
+        position: relative;
+        z-index:1;
         @media (max-width:$responsive_1) {
             display:inline-block;
-            &[data-on="0"] + .rd_header_menu_container { 
-                display:none;
+            &[data-on="0"] { 
+                background-image:url("/images/icons/ic_menu_black_24px.svg");
+                & + .rd_header_menu_container { 
+                    display:none;
+                }
             }
-            &[data-on="1"] + .rd_header_menu_container { 
-                position: absolute;
-                left:0;
-                right:0;
+            &[data-on="1"] {
+                background-image:url("/images/icons/ic_close_black_24px.svg");
+                & + .rd_header_menu_container { 
+                    position: absolute;
+                    left:0;
+                    right:0;
+                    top:0;
+                }
             }
         }
     }
