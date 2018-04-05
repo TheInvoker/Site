@@ -1,8 +1,9 @@
 @import 'lib';
 
 body {
-    font-family: 'Open Sans', sans-serif;
     margin:0;
+    font-size:$font_size_2;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .rd_full_body_container {
