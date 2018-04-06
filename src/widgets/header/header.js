@@ -11,6 +11,10 @@ define(["spa", "headroom", "utils"], function(SPA, Headroom, utils) {
         t.setAttribute("data-on", "0");
         t.addEventListener("click", function(e) {
             t.setAttribute("data-on", 1 - t.getAttribute("data-on"));
+            event.stopPropagation();
+        });
+        document.body.addEventListener("click", function(e) {
+            t.setAttribute("data-on", 0);
         });
         div.appendChild(t);
 

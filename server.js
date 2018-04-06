@@ -10,8 +10,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 /*
  * Visit the home page
  */
-app.get('/', function (req, res) {
-	res.sendFile(__dirname + '/index.html');
+app.get('*', function (req, res) {
+    console.log(__dirname);
+    res.sendFile(__dirname + '/public/index.html');
 });
 
 var server = app.listen(process.env.PORT || 3000, function () {
