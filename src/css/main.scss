@@ -1,5 +1,8 @@
 @import 'lib';
 
+html, body {
+    height:100%;
+}
 body {
     margin:0;
     font-size:$font_size_2;
@@ -8,7 +11,7 @@ body {
 
 .rd_full_body_container {
     display: flex;
-    min-height: 100vh;
+    min-height: 100%;
     flex-direction: column;
     .rd_full_body {
         flex: 1;
