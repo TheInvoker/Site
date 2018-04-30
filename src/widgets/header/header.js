@@ -26,7 +26,7 @@ define(["spa", "headroom", "utils"], function(SPA, Headroom, utils) {
             var t = document.createElement("div");
             t.classList.add("rd_header_cell");
             t.addEventListener("click", function(e) {
-                SPA.openPage(item.url, {}, true);
+                SPA.openPage(item.url, null, true);
             });
             t.innerHTML = item.name;
             menu.appendChild(t);
@@ -35,8 +35,6 @@ define(["spa", "headroom", "utils"], function(SPA, Headroom, utils) {
         var headroom  = new Headroom(div);
         headroom.init(); 
 
-        this.getElement = function() {
-            return div;
-        };
+        return div;
     };
 });

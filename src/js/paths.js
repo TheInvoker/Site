@@ -7,8 +7,14 @@ requirejs.config({
 
         "utils" : "js/utils",
 
-        "header" : "widgets/header/header",
-        "body" : "widgets/body/body",
-        "footer" : "widgets/footer/footer"
+        "widget_header" : "widgets/header/header",
+        "widget_body" : "widgets/body/body",
+        "widget_footer" : "widgets/footer/footer",
+
+        "page_about" : "pages/about/page",
+        "page_projects" : "pages/projects/page",
+        "page_work" : "pages/work/page",
+        "page_education" : "pages/education/page",
+        "page_contact" : "pages/contact/page"
     }
 });

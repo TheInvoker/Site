@@ -6,8 +6,6 @@ define(["utils"], function(utils) {
         var div = document.createElement("div");
         div.classList.add("rd_body");
 
-        this.getElement = function() {
-            return div;
-        };
+        return div;
     };
 });

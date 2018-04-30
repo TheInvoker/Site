@@ -1,26 +1,22 @@
-require(["jquery", "spa", "header", "body", "footer", "utils"], function($, SPA, Header, Body, Footer, utils) {
+require(["jquery", "spa", "widget_header", "widget_body", "widget_footer", "utils"], function($, SPA, Header, Body, Footer, utils) {
     
     $.ajax({
         url : "/json/site.json",
         success : function(data) {
-            var header = new Header(data.header);
-            var body = new Body();
-            var footer = new Footer(data.social);
-
-            var headerElement = header.getElement();
-            var bodyElement = body.getElement();
-            var footerElement = footer.getElement();
+            var header = Header(data.header);
+            var body = Body();
+            var footer = Footer(data.social);
 
             var div = document.createElement("div");
-            div.appendChild(headerElement);
-            div.appendChild(bodyElement);
-            div.appendChild(footerElement);
+            div.appendChild(header);
+            div.appendChild(body);
+            div.appendChild(footer);
             document.body.appendChild(div);
 
             div.classList.add("rd_full_body_container");
-            bodyElement.classList.add("rd_full_body");
+            body.classList.add("rd_full_body");
 
-            handleBody(SPA, div, bodyElement, utils);
+            handleBody(SPA, div, body, utils);
         }, 
         error : function(jqXHR, error, errorThrown) {
 
@@ -36,9 +32,10 @@ require(["jquery", "spa", "header", "body", "footer", "utils"], function($, SPA,
                 layout : layout,
                 context : context,
                 content : function(callback, data) {
-                    var f = document.createElement("div");
-                    f.innerHTML = "About";
-                    callback(f);
+                    require(["page_about"], function(page) {
+                        var element = page(data);
+                        callback(element);
+                    });
                 }
             },
             {
@@ -46,9 +43,10 @@ require(["jquery", "spa", "header", "body", "footer", "utils"], function($, SPA,
                 layout : layout,
                 context : context,
                 content : function(callback, data) {
-                    var f = document.createElement("div");
-                    f.innerHTML = "Projects";
-                    callback(f);
+                    require(["page_projects"], function(page) {
+                        var element = page(data);
+                        callback(element);
+                    });
                 }
             },
             {
@@ -56,9 +54,10 @@ require(["jquery", "spa", "header", "body", "footer", "utils"], function($, SPA,
                 layout : layout,
                 context : context,
                 content : function(callback, data) {
-                    var f = document.createElement("div");
-                    f.innerHTML = "Work";
-                    callback(f);
+                    require(["page_work"], function(page) {
+                        var element = page(data);
+                        callback(element);
+                    });
                 }
             },
             {
@@ -66,9 +65,10 @@ require(["jquery", "spa", "header", "body", "footer", "utils"], function($, SPA,
                 layout : layout,
                 context : context,
                 content : function(callback, data) {
-                    var f = document.createElement("div");
-                    f.innerHTML = "Education";
-                    callback(f);
+                    require(["page_education"], function(page) {
+                        var element = page(data);
+                        callback(element);
+                    });
                 }
             },
             {
@@ -76,9 +76,10 @@ require(["jquery", "spa", "header", "body", "footer", "utils"], function($, SPA,
                 layout : layout,
                 context : context,
                 content : function(callback, data) {
-                    var f = document.createElement("div");
-                    f.innerHTML = "Contact";
-                    callback(f);
+                    require(["page_contact"], function(page) {
+                        var element = page(data);
+                        callback(element);
+                    });
                 }
             }
         ]);

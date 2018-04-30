@@ -15,8 +15,6 @@ define(["utils"], function(utils) {
             div.appendChild(t);
         });
 
-        this.getElement = function() {
-            return div;
-        };
+        return div;
     };
 });
