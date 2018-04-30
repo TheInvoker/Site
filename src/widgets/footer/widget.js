@@ -1,6 +1,6 @@
-define(["utils"], function(utils) {
+define(['module', "utils"], function(module, utils) {
 
-    utils.insertCSS("widgets/footer/widget.css");
+    utils.insertCSS(utils.getDirectory(module.uri) + "widget.css");
 
     return function(data) {
         var div = document.createElement("div");

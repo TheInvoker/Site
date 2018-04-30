@@ -1,6 +1,6 @@
-define(["spa", "headroom", "utils"], function(SPA, Headroom, utils) {
+define(['module', "spa", "headroom", "utils"], function(module, SPA, Headroom, utils) {
 
-    utils.insertCSS("widgets/header/widget.css");
+    utils.insertCSS(utils.getDirectory(module.uri) + "widget.css");
 
     function setActive(menu, elem) {
         var cs = menu.querySelector(".rd_header_cell.rd_header_cell_selected");

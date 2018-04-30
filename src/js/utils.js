@@ -10,5 +10,9 @@ define([], function() {
             link.href = href;
             head.appendChild(link);
         };
+
+        this.getDirectory = function(filepath) {
+            return filepath.substring(0, filepath.lastIndexOf("/") + 1);
+        };
     };
 });
