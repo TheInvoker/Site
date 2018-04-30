@@ -1,6 +1,6 @@
 define(["utils"], function(utils) {
 
-    utils.insertCSS("widgets/body/body.css");
+    utils.insertCSS("widgets/body/widget.css");
 
     return function() {
         var div = document.createElement("div");

@@ -7,9 +7,9 @@ requirejs.config({
 
         "utils" : "js/utils",
 
-        "widget_header" : "widgets/header/header",
-        "widget_body" : "widgets/body/body",
-        "widget_footer" : "widgets/footer/footer",
+        "widget_header" : "widgets/header/widget",
+        "widget_body" : "widgets/body/widget",
+        "widget_footer" : "widgets/footer/widget",
 
         "page_about" : "pages/about/page",
         "page_projects" : "pages/projects/page",
