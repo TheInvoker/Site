@@ -2,6 +2,12 @@ define(["spa", "headroom", "utils"], function(SPA, Headroom, utils) {
 
     utils.insertCSS("widgets/header/header.css");
 
+    function setActive(menu, elem) {
+        var cs = menu.querySelector(".rd_header_cell.rd_header_cell_selected");
+        if (cs) cs.classList.remove("rd_header_cell_selected");
+        elem.classList.add("rd_header_cell_selected");
+    }
+
     return function(data) {
         var div = document.createElement("div");
         div.classList.add("rd_header");
@@ -26,8 +32,13 @@ define(["spa", "headroom", "utils"], function(SPA, Headroom, utils) {
             var t = document.createElement("div");
             t.classList.add("rd_header_cell");
             t.addEventListener("click", function(e) {
+                setActive(menu, t);
                 SPA.openPage(item.url, null, true);
             });
+            // set default selection
+            if (item.url.toLowerCase() == window.location.pathname) {
+                setActive(menu, t);
+            }
             t.innerHTML = item.name;
             menu.appendChild(t);
         });

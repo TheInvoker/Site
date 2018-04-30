@@ -74,6 +74,13 @@
                 background-color:black;
                 color:white;
             }
+            &.rd_header_cell_selected {
+                background-color:#008670;
+                color:white;
+                &:hover {
+                    background-color:#006e5c;
+                }
+            }
             @media (max-width:$responsive_1) {
                 display:block;
             }
