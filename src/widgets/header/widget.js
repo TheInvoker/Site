@@ -36,7 +36,7 @@ define(['module', "spa", "headroom", "utils"], function(module, SPA, Headroom, u
                 SPA.openPage(item.url, null, true);
             });
             // set default selection
-            if (item.url.toLowerCase() == window.location.pathname) {
+            if (item.url.toLowerCase() == window.location.pathname.toLowerCase()) {
                 setActive(menu, t);
             }
             t.innerHTML = item.name;
