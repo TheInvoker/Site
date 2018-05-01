@@ -81,6 +81,17 @@ require(["jquery", "spa", "widget_header", "widget_body", "widget_footer", "util
                         callback(element);
                     });
                 }
+            },
+            {
+                path : ".*",
+                layout : layout,
+                context : context,
+                content : function(callback, data) {
+                    require(["page_404"], function(page) {
+                        var element = page(data);
+                        callback(element);
+                    });
+                }
             }
         ]);
         SPA.start({});

@@ -15,6 +15,7 @@ requirejs.config({
         "page_projects" : "pages/projects/page",
         "page_work" : "pages/work/page",
         "page_education" : "pages/education/page",
-        "page_contact" : "pages/contact/page"
+        "page_contact" : "pages/contact/page",
+        "page_404" : "pages/404/page"
     }
 });
