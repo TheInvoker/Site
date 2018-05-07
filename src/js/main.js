@@ -16,14 +16,14 @@ require(["jquery", "spa", "widget_header", "widget_body", "widget_footer", "util
             div.classList.add("rd_full_body_container");
             body.classList.add("rd_full_body");
 
-            handleBody(SPA, div, body, utils);
+            handleBody(SPA, div, body, utils, data);
         }, 
         error : function(jqXHR, error, errorThrown) {
 
         }
     });
 
-    function handleBody(SPA, layout, context, utils) {
+    function handleBody(SPA, layout, context, utils, json_data) {
         utils.insertCSS("css/plugins/spa.css");
 
         SPA.addPages([
@@ -33,7 +33,7 @@ require(["jquery", "spa", "widget_header", "widget_body", "widget_footer", "util
                 context : context,
                 content : function(callback, data) {
                     require(["page_about"], function(page) {
-                        var element = page(data);
+                        var element = page(json_data.title, json_data.image, json_data.bio);
                         callback(element);
                     });
                 }
@@ -77,7 +77,7 @@ require(["jquery", "spa", "widget_header", "widget_body", "widget_footer", "util
                 context : context,
                 content : function(callback, data) {
                     require(["page_contact"], function(page) {
-                        var element = page(data);
+                        var element = page(json_data.social);
                         callback(element);
                     });
                 }
