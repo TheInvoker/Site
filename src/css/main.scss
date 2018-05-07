@@ -8,6 +8,9 @@ body {
     font-size:$font_size_2;
     font-family: 'Open Sans', sans-serif;
 }
+.padding-0-10 {
+    padding: 0 10px;
+}
 
 .rd_full_body_container {
     display: flex;
@@ -30,8 +33,4 @@ body {
             }
         }
     }
-}
-
-.padding10 {
-    padding: 10px;
 }
