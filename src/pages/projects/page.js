@@ -4,6 +4,7 @@ define(['module', "utils"], function(module, utils) {
 
     return function(data) {
         var div = document.createElement("div");
+        div.classList.add("rd_page_projects");
         div.innerHTML = "projects";
         return div;
     };

@@ -4,6 +4,7 @@ define(['module', "utils"], function(module, utils) {
 
     return function(data) {
         var div = document.createElement("div");
+        div.classList.add("rd_page_404");
         div.innerHTML = "page not found";
         return div;
     };

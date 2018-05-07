@@ -17,3 +17,21 @@ body {
         flex: 1;
     }
 }
+
+.rd_image_grid {
+    font-size:0;
+    .rd_image_row {
+        display:flex;
+        .rd_image_cell {
+            flex:auto;
+            img {
+                width:100%;
+                display:block;
+            }
+        }
+    }
+}
+
+.padding10 {
+    padding: 10px;
+}
