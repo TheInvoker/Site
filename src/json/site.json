@@ -80,6 +80,225 @@
             "date" : "Jan 2012 - Feb 2018"
         }
     ],
+    "projects" : {
+        "gamemaker" : {
+            "intro" : "Made several games with <a href=\"http://www.yoyogames.com/gamemaker\" target=\"_blank\">GameMaker</a>.",
+            "data" : [
+                {
+                    "name" : "3D Animation Creator",
+                    "description" : "Use this program to create simplistic animations exclusive for GameMaker.",
+                    "download" : [
+                        {
+                            "name":"Download",
+                            "url":"http://dl.dropbox.com/u/48932382/Games/3D%20Animation%20Creator/3D%20Animation%20Creator%208.0.zip"
+                        }
+                    ],
+                    "screenshots" : [
+                        "/images/gameScreens/screenshot100.png"
+                    ]
+                },
+                {
+                    "name" : "Height Map Converter",
+                    "description" : "Use this program to create .hmp files from your height map files. Then you can view it using the viewer program for faster loading. The software in the beginning of the video that creates the map isn't mine.",
+                    "download" : [
+                        {
+                            "name":"Download",
+                            "url":"http://dl.dropbox.com/u/48932382/Games/Height%20Map%20Converter/Height%20Map%20Converter.zip"
+                        }   
+                    ],
+                    "videos" : [
+                        "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/KVbfP_Ixaks\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+                    ]
+                },
+                {
+                    "name" : "Dota",
+                    "description" : "Level up your avatar and destroy the enemy base.",
+                    "download" : [
+                        {
+                            "name":"Download",
+                            "url":"http://dl.dropbox.com/u/48932382/Games/Dota/Dota.zip"
+                        }   
+                    ],
+                    "videos" : [
+                        "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/E46WZwk7MaE\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+                    ]
+                },
+                {
+                    "name" : "Blackjack Card Counting",
+                    "description" : "Practice card counting using hi-lo algorithm for blackjack.",
+                    "download" : [
+                        {
+                            "name":"Download",
+                            "url":"http://dl.dropbox.com/u/48932382/Games/Blackjack/Blackjack.zip"
+                        }   
+                    ],
+                    "screenshots" : [
+                        "/images/gameScreens/screenshot101.png"
+                    ]
+                },
+                {
+                    "name" : "Death Note Game",
+                    "description" : "Write names in the book to kill people and move on to the next level to ultimately become God of the new world.",
+                    "download" : [
+                        {
+                            "name":"Download",
+                            "url":"http://dl.dropbox.com/u/48932382/Games/Death%20Note/Death%20Note.zip"
+                        }   
+                    ],
+                    "screenshots" : [
+                        "/images/gameScreens/screenshot102.png"
+                    ]
+                },
+                {
+                    "name" : "Mummy Survival",
+                    "description" : "Survive against waves of mummies. First (and third) person shooter.",
+                    "download" : [
+                        {
+                            "name":"Download",
+                            "url":"http://dl.dropbox.com/u/48932382/Games/Mummy%20Survival/Mummy%20Survival.zip"
+                        }   
+                    ],
+                    "screenshots" : [
+                        "/images/gameScreens/screenshot104.png"
+                    ]
+                },
+                {
+                    "name" : "Shoot Them Up",
+                    "description" : "A platform shooting game featuring kirby. Also features a boss survival mode late game.",
+                    "download" : [
+                        {
+                            "name":"Download",
+                            "url":"http://dl.dropbox.com/u/48932382/Games/Shoot%20Them%20Up/Shoot%20Them%20Up.zip"
+                        }   
+                    ],
+                    "screenshots" : [
+                        "/images/gameScreens/screenshot105.png"
+                    ]
+                },
+                {
+                    "name" : "Shoot Them Up Challenge Edition",
+                    "description" : "A short but incredibly hard platform shooting game featuing kirby. A modified harder version of Shoot Them Up.",
+                    "download" : [
+                        {
+                            "name":"Download",
+                            "url":"http://dl.dropbox.com/u/48932382/Games/Dota/Dota.zip"
+                        },
+                        {
+                            "name":"HTML5",
+                            "url":"http://dl.dropbox.com/u/48932382/Games/Shoot%20Them%20Up%20Challenge%20Edition/Kirby/index.html"
+                        }
+                    ],
+                    "videos" : [
+                        "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/8tNq4bmZ7jo\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+                    ]
+                },
+                {
+                    "name" : "Kirby Boss Survival",
+                    "description" : "See how far you can get in this boss survival game featuring kirby. A sequel to Shoot Them Up.",
+                    "download" : [
+                        {
+                            "name":"Download",
+                            "url":"http://dl.dropbox.com/u/48932382/Games/Kirby%20Boss%20Survival/Kirby%20Boss%20Survival.zip"
+                        }   
+                    ],
+                    "screenshots" : [
+                        "/images/gameScreens/screenshot103.png"
+                    ]
+                },
+                {
+                    "name" : "Cursor Catch",
+                    "description" : "Avoid Kesler the robot with your mouse. See if you can last 10 levels in this addicting game.",
+                    "download" : [
+                        {
+                            "name":"Download",
+                            "url":"http://dl.dropbox.com/u/48932382/Games/Cursor%20Catch/cursorcatch.zip"
+                        }   
+                    ],
+                    "screenshots" : [
+                        "/images/gameScreens/screenshot106.png"
+                    ]
+                },
+                {
+                    "name" : "Mountain Adventure 3D",
+                    "description" : "Avoid the falling boulders while collecting stars. Test your skills by setting a new highscore.",
+                    "download" : [
+                        {
+                            "name":"Download",
+                            "url":"http://dl.dropbox.com/u/48932382/Games/Mountain%20Advanture%203D/Mountain_Adventure%203D.zip"
+                        }   
+                    ],
+                    "videos" : [
+                        "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/l_oB97QT4G8\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+                    ]
+                },
+                {
+                    "name" : "Robot Fight 1",
+                    "description" : "Basically mortal kombat but with two robots.",
+                    "download" : [
+                        {
+                            "name":"Download",
+                            "url":"http://dl.dropbox.com/u/48932382/Games/Robot%20Fight%201/Robot%20Fight%201.zip"
+                        }   
+                    ],
+                    "screenshots" : [
+                        "/images/gameScreens/screenshot107.png"
+                    ]
+                },
+                {
+                    "name" : "Robot Fight 2",
+                    "description" : "The sequel to Robot Fight 1. Basically mortal kombat but with two robots.",
+                    "download" : [
+                        {
+                            "name":"Download",
+                            "url":"http://dl.dropbox.com/u/48932382/Games/Robot%20Fight%202/Robot%20Fight%202.zip"
+                        }   
+                    ],
+                    "screenshots" : [
+                        "/images/gameScreens/screenshot108.png"
+                    ]
+                },
+                {
+                    "name" : "Robot Fight 3D",
+                    "description" : "The sequel to Robot Fight 2. Basically mortal combat in 3D with two robots.",
+                    "download" : [
+                        {
+                            "name":"Download",
+                            "url":"http://dl.dropbox.com/u/48932382/Games/Robot%20Fight%203D/Robot%20Fight%203D.zip"
+                        }   
+                    ],
+                    "screenshots" : [
+                        "/images/gameScreens/screenshot109.png"
+                    ]
+                },
+                {
+                    "name" : "Super Galactic Robot Castle Wars 3D",
+                    "description" : "A fun 3D strategy game where you build units to increase your profit per second and try to destroy the enemy base.",
+                    "download" : [
+                        {
+                            "name":"Download",
+                            "url":"http://dl.dropbox.com/u/48932382/Games/Super%20Galactic%20Robot%20Castle%20Wars%203D/Super%20Galactic%20Robot%20Castle%20Wars%203D.zip"
+                        }   
+                    ],
+                    "screenshots" : [
+                        "/images/gameScreens/screenshot110.png"
+                    ]
+                },
+                {
+                    "name" : "Tron",
+                    "description" : "Drive your bike to create a wall and try to crash enemies by trapping them.",
+                    "download" : [
+                        {
+                            "name":"Download",
+                            "url":"http://dl.dropbox.com/u/48932382/Games/Tron/Tron.zip"
+                        }   
+                    ],
+                    "screenshots" : [
+                        "/images/gameScreens/screenshot111.jpg"
+                    ]
+                }
+            ]
+        }
+    },
     "social" : [
         {
             "name" : "Email",

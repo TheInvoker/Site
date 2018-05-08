@@ -14,5 +14,9 @@ define([], function() {
         this.getDirectory = function(filepath) {
             return filepath.substring(0, filepath.lastIndexOf("/") + 1);
         };
+
+        this.urlSafeName = function(name) {
+            return name.replace(/[^a-zA-Z\d]/g,'-').toLowerCase()
+        };
     };
 });
