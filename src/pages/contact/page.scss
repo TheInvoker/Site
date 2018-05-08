@@ -2,4 +2,14 @@
 
 .rd_page_contact {
     padding:10px;
+    .rd_social_media_link {
+        text-decoration: none;
+        color:black;
+        font-size:3em;
+        img {
+            width:1em;
+            height:1em;
+            padding-right:10px;
+        }
+    }
 }

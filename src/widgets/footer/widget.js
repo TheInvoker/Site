@@ -11,7 +11,7 @@ define(['module', "utils"], function(module, utils) {
             t.setAttribute("href", item.url);
             t.setAttribute("target", item.target);
             t.classList.add("rd_footer_cell");
-            t.innerHTML = item.name;
+            t.innerHTML = "<img src=\"" + item.icon + "\"/>" + item.name;
             div.appendChild(t);
         });
 

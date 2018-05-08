@@ -16,7 +16,7 @@ define(['module', 'jquery', "utils"], function(module, $, utils) {
             return "<p>" + item + "</p>";
         }).join('') + "</div>";
 
-        var wrapper = "<div style=\"position:relative;\">" + grid + "<div style=\"position:absolute;top:0;left:0;color:white;padding:0 1em;\"><h1>" + title + "</h1></div></div>";
+        var wrapper = "<div class=\"rd_main_wrapper\">" + grid + "<div class=\"rd_title\">" + title + "</div></div>";
 
         div.innerHTML = wrapper + bio_html;
 

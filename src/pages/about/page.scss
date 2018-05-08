@@ -1,5 +1,17 @@
 @import 'lib';
 
 .rd_page_about {
-
+    .rd_main_wrapper {
+        position:relative;
+        .rd_title {
+            position:absolute;
+            top:0;
+            left:0;
+            color:white;
+            padding:4px 8px;
+            font-size:4vw;
+            border-radius:0 0 10px 0;
+            background-color:rgba(0,0,0,0.5);
+        }
+    }
 }

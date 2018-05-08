@@ -50,21 +50,40 @@
         "I spend a lot of time working on personal projects and like to participate in extracurricular activities with teams such as coding competitions/hackathons. My dream, which I actively try to work towards, is to build a successful startup company and make an impact on the world.",
         "On my free time I spend time with my friends by hanging out or going out to social events. Every time an opportunity arises where it could benefit me later in my career, I try to learn it so that I can be well prepared. Most of my friends see me as a very ambitious and hardworking person who always continues to learn new things in life while preparing other things trying to stay steps ahead."
     ],
+    "education" : [
+        {
+            "host" : "Linux Foundation through edX",
+            "host_url" : "https://www.edx.org/school/linuxfoundationx",
+            "date" : "Nov 2017",
+            "name" : "Blockchain for Business - An Introduction to Hyperledger Technologies",
+            "type" : "Certificate of Completion"
+        },
+        {
+            "host" : "University of Toronto Scarborough (UTSC)",
+            "host_url" : "http://www.utsc.utoronto.ca/home/",
+            "date" : "2009 - 2015",
+            "name" : "Computer Science (Co-op)",
+            "type" : "Comprehensive Stream, Specialist (B.Sc)"
+        }
+    ],
     "social" : [
         {
             "name" : "Email",
             "url" : "mailto:ryan.dsouza@hotmail.ca",
-            "target" : "_self"
+            "target" : "_self",
+            "icon":"/images/icons/envelope.svg"
         },
         {
             "name" : "LinkedIn",
             "url" : "https://ca.linkedin.com/in/ryanstevedsouza647",
-            "target" : "_blank"
+            "target" : "_blank",
+            "icon":"/images/icons/linkedin.svg"
         },
         {
             "name" : "Github",
             "url" : "https://github.com/TheInvoker",
-            "target" : "_blank"
+            "target" : "_blank",
+            "icon":"/images/icons/github-sign.svg"
         }
     ]
 }
