@@ -16,10 +16,14 @@ define(['module', "spa", "utils"], function(module, SPA, utils) {
         data.gamemaker.data.map(function(item) {
             var d = document.createElement('div');
             d.innerHTML = item.name;
+            d.classList.add("rd_project_item");
             d.addEventListener("click", function(e) {
                 SPA.openPage("/projects/gamemaker/" + utils.urlSafeName(item.name), null, true);
             });
-            div.appendChild(d);
+
+            var od = document.createElement('div');
+            od.appendChild(d);
+            div.appendChild(od);
         });
 
         return div;

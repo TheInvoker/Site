@@ -24,7 +24,7 @@ require(["jquery", "spa", "widget_header", "widget_body", "widget_footer", "util
     });
 
     function handleBody(SPA, layout, context, utils, json_data) {
-        utils.insertCSS("css/plugins/spa.css");
+        utils.insertCSS("/css/plugins/spa.css");
 
         var pages = [
             {

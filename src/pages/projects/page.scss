@@ -2,4 +2,8 @@
 
 .rd_page_projects {
     padding:10px;
+    .rd_project_item {
+        cursor:pointer;
+        display:inline-block;
+    }
 }
