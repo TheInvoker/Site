@@ -55,7 +55,7 @@ require(["jquery", "spa", "widget_header", "widget_body", "widget_footer", "util
                 context : context,
                 content : function(callback, data) {
                     require(["page_work"], function(page) {
-                        var element = page(data);
+                        var element = page(json_data.work);
                         callback(element);
                     });
                 }

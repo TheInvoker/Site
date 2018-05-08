@@ -1,5 +1,8 @@
 @import 'lib';
 
 .rd_page_work {
-    
+    padding:10px;
+    .rd_work_item:not(:last-child) {
+        padding:0 0 10px 0;
+    }
 }
